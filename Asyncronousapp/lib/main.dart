@@ -125,9 +125,9 @@ class _AsyncApliccationState extends State<AsyncApliccation> {
                 onPressed: () async {
                   setState(() {
                     bus_bar_with = 300;
-                    b_lapsed_time = 1;
+                    b_lapsed_time = 3;
                   });
-                  bus = await MockApi().getFerrariInteger();
+                  bus = await MockApi().getHyundaiInteger();
                   setState(() {
                     bus_text = bus;
                     b_lapsed_time = 0;
@@ -167,9 +167,9 @@ class _AsyncApliccationState extends State<AsyncApliccation> {
                 onPressed: () async {
                   setState(() {
                     human_bar_with = 300;
-                    h_lapsed_time = 1;
+                    h_lapsed_time = 10;
                   });
-                  human = await MockApi().getFerrariInteger();
+                  human = await MockApi().getFisherPriceInteger();
                   setState(() {
                     human_text = human;
                     h_lapsed_time = 0;
